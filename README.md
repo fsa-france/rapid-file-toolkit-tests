@@ -89,14 +89,14 @@ A recorded demo is also available to show the benefits of the RapidFile Toolkit 
 ## RESULTS ON OUR PARIS LAB
 
 ### LS/PLS, FIND/PFIND and DU/PDU
-![LS/PLS, FIND/PFIND and DU/PDU](RapidFileToolkitResults1.png)
+![LS/PLS, FIND/PFIND and DU/PDU](RapidFileToolkitResults-ls-find-du.png)
 
-### CHMOD/PCHMOD, CHOWN/PCHMOD
-![CHMOD/PCHMOD, CHOWN/PCHMOD](RapidFileToolkitResults2.png)
+### HMOD/PCHMOD, CHOWN/PCHMOD
+![CHMOD/PCHMOD, CHOWN/PCHMOD](RapidFileToolkitResults-chmod-chown.png)
 
-### CP/PCOPY, TAR/PTAR and RM/PRM
+### CP/PCOPY, TRA/PTAR and RM/PRM
 
-![CP/PCOPY, TRA/PTAR and RM/PRM](RapidFileToolkitResults3.png)
+![CP/PCOPY, TRA/PTAR and RM/PRM](RapidFileToolkitResults-cp-tar-rm.png)
 
 
 
