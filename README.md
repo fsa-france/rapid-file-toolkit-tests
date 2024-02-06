@@ -91,10 +91,10 @@ A recorded demo is also available to show the benefits of the RapidFile Toolkit 
 ### LS/PLS, FIND/PFIND and DU/PDU
 ![LS/PLS, FIND/PFIND and DU/PDU](RapidFileToolkitResults1.png)
 
-### HMOD/PCHMOD, CHOWN/PCHMOD
+### CHMOD/PCHMOD, CHOWN/PCHMOD
 ![CHMOD/PCHMOD, CHOWN/PCHMOD](RapidFileToolkitResults2.png)
 
-### CP/PCOPY, TRA/PTAR and RM/PRM
+### CP/PCOPY, TAR/PTAR and RM/PRM
 
 ![CP/PCOPY, TRA/PTAR and RM/PRM](RapidFileToolkitResults3.png)
 
