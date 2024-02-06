@@ -7,10 +7,12 @@
 ROOT_PATH="/datascience-folder"
 ROOT_DIR_NAMES="dir"
 
-
 # Define log file path relative to script location
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &>/dev/null && pwd )"
 LOG_FILE="$SCRIPT_DIR/rft_automated_tests_$(date +'%Y%m%d_%H%M%S').txt"
+
+# Flush all caches (JBT)
+sudo sync; echo 3 > /proc/sys/vm/drop_caches
 
 # Checking accessibility of the root path
 if [ ! -d "$ROOT_PATH" ]; then
