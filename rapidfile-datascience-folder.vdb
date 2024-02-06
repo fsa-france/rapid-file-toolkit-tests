@@ -1,0 +1,33 @@
+# Run paralell random getattr operations for 2H, after format, using 200k files evenly spread accross 2 hosts
+# The hosts needs to share the same storage for the test's totals to be relevant
+
+# defaults
+messagescan=nodisplay
+create_anchors=yes
+
+# host definitions
+hd=default,shell=ssh,user=root,jvms=16,vdbench=/root/vdbench
+hd=hd1,system=z-fbvdb-001
+hd=hd2,system=z-fbvdb-002
+hd=hd3,system=z-fbvdb-003
+hd=hd4,system=z-fbvdb-004
+hd=hd5,system=z-fbvdb-005
+
+# filesystem definitions
+fsd=default,width=1000,depth=1,files=100,size=4k,openflags=directio
+fsd=fsd1,anchor=/datascience-folder/dir1
+fsd=fsd2,anchor=/datascience-folder/dir2
+fsd=fsd3,anchor=/datascience-folder/dir3
+fsd=fsd4,anchor=/datascience-folder/dir4
+fsd=fsd5,anchor=/datascience-folder/dir5
+
+# filesystem workload definitions
+fwd=default,xfersize=4k,threads=25,fileio=random,fileselect=random,rdpct=100,operation=getattr
+fwd=fwd1,host=hd1,fsd=fsd1
+fwd=fwd2,host=hd2,fsd=fsd2
+fwd=fwd3,host=hd3,fsd=fsd3
+fwd=fwd4,host=hd4,fsd=fsd4
+fwd=fwd5,host=hd5,fsd=fsd5
+
+# run definitions
+rd=rd1,fwd=fwd*,fwdrate=max,elapsed=2h,interval=60,format=yes
