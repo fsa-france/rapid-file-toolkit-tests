@@ -98,6 +98,7 @@ A recorded demo is also available to show the benefits of the RapidFile Toolkit 
 
 ![CP/PCOPY, TRA/PTAR and RM/PRM](RapidFileToolkitResults-cp-tar-rm.png)
 
+## License
 
-
+[GNU LICENSE](LICENSE)
 
